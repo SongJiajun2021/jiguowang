@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+ul,
+li,
+dl,
+dt,
+dd {
+  list-style: none;
+}
+/* 头部 */
+.father {
+  width: 100%;
+  height: 74px;
+  background-color: #fff;
+}
+.son {
+  width: 1080px;
+  margin: 0 auto;
+  height: 74px;
+  /* background-color: skyblue; */
+}
+.son img {
+  float: left;
+  margin-top: 15px;
+}
+.son ul,
+.son li {
+  float: left;
+}
+.son ul {
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.son li {
+  width: 100px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+}
+.son li:hover a {
+  color: #ff4543;
+}
+.son2 {
+  float: right;
+  width: 112px;
+  height: 30px;
+  margin-top: 25px;
+}
+.son2 > a {
+  float: left;
+}
+.son2 > a img {
+  margin-top: 5px;
+}
+button {
+  float: right;
+  outline: none;
+  width: 55px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ff4543;
+  background-color: #fff;
+}
+button a {
+  color: #ff4543;
+}
+section {
+  width: 100%;
+  overflow: hidden;
+}
+.baogao {
+  width: 1080px;
+  margin: 0 auto;
+  text-align: center;
+}
+.baogao h1 {
+  margin-top: 30px;
+  font-size: 30px;
+}
+.baogao span {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.baogao span:nth-of-type(1) {
+  margin-right: 80px;
+}
+.zhong {
+  width: 1080px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.zu {
+  width: 70%;
+  float: left;
+  overflow: hidden;
+}
+.z_one > img:nth-of-type(1) {
+  width: 100%;
+  margin-top: 10px;
+}
+.z_one {
+  width: 100%;
+}
+.z_one p {
+  margin-top: 10px;
+}
+.z_one p.z_two {
+  width: 50%;
+  height: 30px;
+  float: left;
+  overflow: hidden;
+}
+.z_one p.z_two img {
+  width: ;
+}
+.z_one p.z_there {
+  height: 30px;
+  float: right;
+  overflow: hidden;
+}
+.you {
+  width: 25%;
+  float: left;
+  overflow: hidden;
+}
+.y_one {
+  width: 100%;
+}
+.y_one p.y_a {
+  color: red;
+  height: 20px;
+  float: left;
+  overflow: hidden;
+  margin-left: 20px;
+  border: 2px solid red;
+  background-color: red;
+  margin-top: 20px;
+}
+.y_one p.y_b {
+  float: left;
+  margin-left: 5px;
+  margin-top: 20px;
+}
+.y_two {
+  width: 100%;
+  float: left;
+}
+.y_two p {
+  font-size: 20px;
+  color: red;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.y_two #mai {
+  width: 50%;
+  margin: 0 auto;
+  margin-right: 188px;
+  margin-top: 10px;
+  background-color: red;
+}
+.y_two p.y_c {
+  margin-left: 90px;
+  font-size: 12px;
+}
+.y_there {
+  width: 100%;
+  float: left;
+}
+.y_there img {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.y_there p {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 12px;
+}
+.y_there p.y_d {
+  font-size: 16px;
+}
+.y_four {
+  width: 100%;
+  float: left;
+}
+.y_four img {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.fter {
+  width: 100%;
+  margin-top: 20px;
+  height: 360px;
+  background-color: #505050;
+}
+.fter_f2 {
+  width: 1080px;
+  height: 242px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 42px;
+}
+.f_dl,
+.f_dl2,
+.f_dl3,
+.f_dl4,
+.f_dl5 {
+  float: left;
+  margin-right: 40px;
+}
+.f_dl2 {
+  font-size: 12px;
+  color: #a4a3a1;
+}
+.f_dl2 dd:nth-child(2) {
+  margin-top: 30px;
+}
+.f_dl2 dd:nth-child(3) {
+  margin-top: 20px;
+}
+.f_dl3 dt,
+.f_dl4 dt,
+.f_dl5 dt {
+  color: #fff;
+}
+.f_dl3 dd,
+.f_dl5 dd {
+  color: #a4a3a1;
+  font-size: 12px;
+}
+.f_dl3 dd:nth-child(2),
+.f_dl5 dd:nth-child(2) {
+  margin-top: 30px;
+}
+.f_dl4 a {
+  display: inline-block;
+  width: 66px;
+  font-size: 12px;
+  color: #a4a3a1;
+}
+.f_dl4 dd:nth-child(2) {
+  margin-top: 30px;
+}
+.fter_f3 {
+  width: 140px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.fter_f3 p {
+  font-size: 12px;
+  color: #a4a3a1;
+}

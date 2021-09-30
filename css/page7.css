@@ -1,0 +1,169 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.zdiv {
+  width: 100%;
+  background: #f7f7f7;
+}
+.zdiv nav {
+  width: 1080px;
+  margin: auto;
+}
+.zdiv nav p {
+  text-align: left;
+  font-size: 12px;
+  line-height: 50px;
+  color: #c0bfbd;
+}
+.zdiv .t-div {
+  width: 1080px;
+  margin: auto;
+  position: relative;
+}
+.zdiv .t-div aside {
+  width: 700px;
+  margin: auto;
+  background: white;
+  display: inline-block;
+}
+.zdiv .t-div aside .as-div {
+  height: 125px;
+  border-bottom: 1px solid #c0bfbd;
+}
+.zdiv .t-div aside .as-div h2 {
+  height: 30px;
+  width: 700px;
+  font-weight: bold;
+  padding-left: 20px ;
+  margin-bottom: 20px;
+  padding-top: 25px;
+}
+.zdiv .t-div aside .as-div div:nth-of-type(1) {
+  float: left;
+  font-size: 12px;
+  color: #c0bfbd;
+  padding-left: 20px;
+}
+.zdiv .t-div aside .as-div div:nth-of-type(2) {
+  float: right;
+  font-size: 12px;
+  color: #c0bfbd;
+  padding-right: 20px;
+}
+.zdiv .t-div aside .as-div2 {
+  text-align: center;
+  padding: 10px;
+}
+.zdiv .t-div aside .as-div2 p {
+  font-size: 12px;
+}
+.zdiv .t-div aside .as-div3 {
+  text-align: center;
+  padding: 10px;
+}
+.zdiv .t-div aside .as-div3 p {
+  font-size: 12px;
+  text-align: left;
+  height: 50px;
+  width: 640px;
+  margin-left: 20px;
+}
+.zdiv .t-div aside .as-div4 {
+  text-align: center;
+  padding: 10px;
+}
+.zdiv .t-div aside .as-div4 p {
+  font-size: 12px;
+  text-align: left;
+  height: 50px;
+  width: 640px;
+  margin-left: 20px;
+}
+.zdiv .t-div aside .as-div4 img {
+  margin-top: 20px;
+}
+.zdiv .t-div aside .as-div5 {
+  text-align: center;
+  padding: 10px;
+}
+.zdiv .t-div aside .as-div5 img {
+  margin-top: 20px;
+}
+.zdiv .t-div aside .as-div6 {
+  text-align: center;
+  padding: 10px;
+}
+.zdiv .t-div aside .as-div6 p {
+  font-size: 12px;
+  text-align: left;
+  height: 50px;
+  width: 640px;
+  margin-left: 20px;
+}
+.zdiv .t-div aside .as-div6 img {
+  margin-top: 20px;
+}
+.zdiv .t-div aside .as-div7 {
+  text-align: center;
+  padding: 10px;
+}
+.zdiv .t-div aside .as-div7 p {
+  font-size: 12px;
+  text-align: left;
+  width: 640px;
+  margin-left: 20px;
+}
+.zdiv .t-div aside .as-div7 img {
+  margin-top: 20px;
+}
+.zdiv .t-div aside .as-div8 {
+  text-align: center;
+  padding: 10px;
+}
+.zdiv .t-div aside .as-div8 p {
+  font-size: 12px;
+  text-align: left;
+  width: 640px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.zdiv .t-div aside .as-div8 img {
+  margin-top: 20px;
+}
+.zdiv .t-div aside span {
+  width: 640px;
+  float: left;
+  text-align: left;
+  margin-left: 20px;
+}
+.zdiv .l-div {
+  width: 282px;
+  height: 110px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: 1px solid #c0bfbd;
+}
+.zdiv .l-div .xh-div {
+  float: left;
+  width: 139px;
+  line-height: 110px;
+  border-right: 1px solid #c0bfbd;
+  text-align: center;
+  background: url('../img/xinRedh.png') no-repeat 55px 15px;
+}
+.zdiv .l-div .xh-div:hover {
+  background: url('../img/xinRedo.png') no-repeat 55px 15px;
+}
+.zdiv .l-div .fx-div {
+  float: left;
+  width: 139px;
+  line-height: 110px;
+  text-align: center;
+  background: url('../img/shareh_yj1.png') no-repeat 60px 15px;
+}
+.zdiv .l-div .fx-div:hover {
+  background: url('../img/share_yj1.png') no-repeat 60px 15px;
+}
