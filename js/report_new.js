@@ -1,6 +1,6 @@
 $(function(){
     $.ajax({
-        url:'http://localhost:3000/report/new',
+        url:'http://192.168.0.101:3000/report/new',
         type:'GET',
         dataType:'JSON',
         success: function(data){
@@ -9,7 +9,7 @@ $(function(){
             data.map(function(nItem){
                 var str=data[i].img;
                 i++;
-                var iSrc=str.replace(/192.168.1.13/g,'localhost')
+                var iSrc=str.replace(/192.168.1.13/g,'192.168.0.101')
                 Sdf+=`<div class="z_one">
                     <img src="${iSrc}" alt="">
                     <p>${nItem.text}</p>
