@@ -17,4 +17,4 @@ function fn() {
         miao = Math.floor(sum / 1000 % 60); //秒
     document.getElementById('daojishi').innerHTML = '申请时间剩余' + k(tian) + '天' + k(xiaoshi) + '时' + k(fen) + '分' + k(miao) + '秒';
 }
-setInterval(fn,);
+setInterval(fn,1000);

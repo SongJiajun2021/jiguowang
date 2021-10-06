@@ -1,62 +1,5 @@
-* {
-  margin: 0px;
-  padding: 0px;
-}
-a {
-  text-decoration: none;
-  color: #000;
-}
-ul,
-li,
-dl,
-dt,
-dd {
-  list-style: none;
-}
-/* 头部 */
-.father {
-  width: 100%;
-  height: 74px;
-  background-color: #fff;
-}
-.son {
-  width: 1080px;
-  margin: 0 auto;
-  height: 74px;
-  /* background-color: skyblue; */
-}
-.son img {
-  float: left;
-  margin-top: 15px;
-}
-.son ul,
-.son li {
-  float: left;
-}
-.son ul {
-  margin-left: 10px;
-  margin-top: 30px;
-}
-.son li {
-  width: 100px;
-  height: 34px;
-  line-height: 34px;
-  text-align: center;
-}
-.son li:hover a {
-  color: #ff4543;
-}
-.son2 {
-  float: right;
-  width: 112px;
-  height: 30px;
-  margin-top: 25px;
-}
-.son2 > a {
-  float: left;
-}
-.son2 > a img {
-  margin-top: 5px;
+header.father {
+  height: auto;
 }
 .imge {
   width: 100%;
@@ -131,19 +74,21 @@ dd {
 .trial {
   width: 100%;
   margin: 0 auto;
-  height: 100px;
+  overflow: hidden;
+  background-color: #F0F0F0;
+  clear: both;
 }
-.tri {
+.trial .tri {
   width: 1080px;
   margin: 0 auto;
-  height: 100px;
+  height: 80px;
   margin-top: 20px;
-}
-.tri p.xian {
-  color: red;
-  height: 50px;
-  float: left;
   overflow: hidden;
+}
+.trial .tri p.xian {
+  color: red;
+  height: 60px;
+  float: left;
   margin-left: 20px;
   border: 2px solid red;
   background-color: red;
@@ -153,12 +98,20 @@ h5 {
   overflow: hidden;
   margin-left: 5px;
   font-size: 20px;
+  font-weight: normal;
+  line-height: 32px;
 }
 .tri li {
   list-style: none;
   float: left;
   overflow: hidden;
   margin-left: 120px;
+  font-size: 12px;
+  color: #666;
+}
+.tri li img {
+  display: block;
+  margin: 0 auto 10px;
 }
 .tri li:nth-child(1) {
   border-bottom: 2px solid red;
@@ -171,7 +124,7 @@ section {
   width: 1080px;
   margin: 0 auto;
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .zu {
   width: 60%;
@@ -190,36 +143,35 @@ section {
   margin-left: 20px;
   border: 2px solid red;
   background-color: red;
-  margin-top: 10px;
 }
 .zu_one p.two {
   float: left;
   overflow: hidden;
   margin-left: 5px;
-  margin-top: 10px;
+  margin-top: 2px;
 }
 .zu_two {
   width: 100%;
+  margin-left: 20px;
 }
 .zu_two p.zu_a {
   color: red;
-  margin-left: 20px;
-  margin-top: 10px;
-  font-size: 16px;
+  line-height: 60px;
+  font-size: 18px;
+  font-weight: bold;
 }
-.zu_two p {
-  font-size: 12px;
-  margin-left: 20px;
-  margin-top: 10px;
+.zu_two p:not([class]) {
+  font-size: 14px;
+  margin: 10px 10px 37px 0;
 }
 .zu_two img {
-  width: 80%;
-  margin-left: 60px;
-  margin-top: 10px;
+  margin: 10px 10px 0 0;
+  width: 568px;
 }
 .zu_two p.zu_lan {
-  color: blue;
-  font-size: 14px;
+  color: #2566CD;
+  font-size: 16px;
+  line-height: 80px;
 }
 .zu_threr {
   width: 100%;
@@ -466,3 +418,4 @@ section {
   font-size: 12px;
   color: #a4a3a1;
 }
+/*# sourceMappingURL=./use.css.map */
