@@ -1,63 +1,3 @@
-* {
-  margin: 0px;
-  padding: 0px;
-}
-a {
-  text-decoration: none;
-  color: #000;
-}
-ul,
-li,
-dl,
-dt,
-dd {
-  list-style: none;
-}
-/* 头部 */
-.father {
-  width: 100%;
-  height: 74px;
-  background-color: #fff;
-}
-.son {
-  width: 1080px;
-  margin: 0 auto;
-  height: 74px;
-  /* background-color: skyblue; */
-}
-.son img {
-  float: left;
-  margin-top: 15px;
-}
-.son ul,
-.son li {
-  float: left;
-}
-.son ul {
-  margin-left: 10px;
-  margin-top: 30px;
-}
-.son li {
-  width: 100px;
-  height: 34px;
-  line-height: 34px;
-  text-align: center;
-}
-.son li:hover a {
-  color: #ff4543;
-}
-.son2 {
-  float: right;
-  width: 112px;
-  height: 30px;
-  margin-top: 25px;
-}
-.son2 > a {
-  float: left;
-}
-.son2 > a img {
-  margin-top: 5px;
-}
 .imge {
   width: 100%;
   height: 300px;
@@ -97,8 +37,9 @@ dd {
   margin-top: 20px;
 }
 .imge .anim ul li {
-  background-color: #fff;
-  opacity: 0.7;
+  background-color: #ffffff50;
+  color: #fff;
+  line-height: 30px;
   float: left;
   width: 60px;
   margin-right: 10px;
@@ -131,19 +72,21 @@ dd {
 .trial {
   width: 100%;
   margin: 0 auto;
-  height: 100px;
+  overflow: hidden;
+  background-color: #F0F0F0;
+  clear: both;
 }
-.tri {
+.trial .tri {
   width: 1080px;
   margin: 0 auto;
-  height: 100px;
+  height: 80px;
   margin-top: 20px;
-}
-.tri p.xian {
-  color: red;
-  height: 50px;
-  float: left;
   overflow: hidden;
+}
+.trial .tri p.xian {
+  color: red;
+  height: 60px;
+  float: left;
   margin-left: 20px;
   border: 2px solid red;
   background-color: red;
@@ -153,12 +96,20 @@ h5 {
   overflow: hidden;
   margin-left: 5px;
   font-size: 20px;
+  font-weight: normal;
+  line-height: 32px;
 }
 .tri li {
   list-style: none;
   float: left;
   overflow: hidden;
   margin-left: 120px;
+  font-size: 12px;
+  color: #666;
+}
+.tri li img {
+  display: block;
+  margin: 0 auto 10px;
 }
 .tri li:nth-child(1) {
   border-bottom: 2px solid red;
@@ -171,7 +122,7 @@ section {
   width: 1080px;
   margin: 0 auto;
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .zu {
   width: 60%;
@@ -190,36 +141,35 @@ section {
   margin-left: 20px;
   border: 2px solid red;
   background-color: red;
-  margin-top: 10px;
 }
 .zu_one p.two {
   float: left;
   overflow: hidden;
   margin-left: 5px;
-  margin-top: 10px;
+  margin-top: 2px;
 }
 .zu_two {
-  width: 100%;
+  width: 93%;
+  margin-left: 20px;
 }
 .zu_two p.zu_a {
   color: red;
-  margin-left: 20px;
-  margin-top: 10px;
-  font-size: 16px;
+  line-height: 60px;
+  font-size: 18px;
+  font-weight: bold;
 }
-.zu_two p {
-  font-size: 12px;
-  margin-left: 20px;
-  margin-top: 10px;
+.zu_two p:not([class]) {
+  font-size: 14px;
+  margin: 10px 10px 37px 0;
 }
 .zu_two img {
-  width: 80%;
-  margin-left: 60px;
-  margin-top: 10px;
+  margin: 10px 10px 0 0;
+  width: 568px;
 }
 .zu_two p.zu_lan {
-  color: blue;
-  font-size: 14px;
+  color: #007ED9;
+  font-size: 16px;
+  line-height: 80px;
 }
 .zu_threr {
   width: 100%;
@@ -228,6 +178,9 @@ section {
   font-size: 12px;
   margin-left: 20px;
   margin-top: 10px;
+}
+.zu_threr p.blue {
+  color: #008795;
 }
 .zu_four {
   width: 100%;
@@ -273,19 +226,30 @@ section {
 .y_two p {
   font-size: 20px;
   color: red;
-  margin-left: 20px;
-  margin-top: 10px;
+}
+.y_two p:first-of-type {
+  margin: 30px 20px;
+  font-size: 30px;
 }
 .y_two #mai {
-  width: 50%;
-  margin: 0 auto;
-  margin-right: 188px;
-  margin-top: 10px;
+  float: none;
+  display: block;
+  width: 270px;
+  margin: 30px 20px 0;
   background-color: red;
+  height: 48px;
+  line-height: 24px;
+}
+.y_two #mai a {
+  color: #fff;
+  font-size: 20px;
 }
 .y_two p.y_c {
-  margin-left: 90px;
+  margin: 15px 20px;
+  width: 270px;
+  text-align: center;
   font-size: 12px;
+  color: #666;
 }
 .y_there {
   width: 100%;
@@ -328,7 +292,7 @@ section {
 }
 .shiyong p.duo {
   float: right;
-  margin-right: 30px;
+  margin-right: 70px;
   font-size: 14px;
   color: red;
 }
@@ -338,25 +302,46 @@ section {
 }
 .products_one li {
   list-style: none;
-  width: 24%;
+  width: 220px;
   float: left;
   overflow: hidden;
-  border: 1px solid;
+  border: 1px solid #eee;
   border-radius: 10px;
-  margin-right: 5px;
+  padding-bottom: 15px;
+  position: relative;
+}
+.products_one li:not(:last-child) {
+  margin-right: 40px;
+}
+.products_one li::after {
+  content: "首发";
+  padding: 0 8px;
+  line-height: 20px;
+  font-size: 12px;
+  background-color: #F93E1C;
+  border-radius: 0 10px;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  color: #fff;
 }
 .products_one li img {
   width: 259px;
 }
+.products_one li p {
+  margin-left: 5px;
+  margin-right: 5px;
+}
 .products_one li .p_a {
   margin-top: 5px;
   text-align: center;
+  font-weight: bold;
 }
 .products_one li .P_b {
   display: inline-block;
   border: 1px solid red;
   border-radius: 5px;
-  margin-left: 75px;
+  margin-left: 50px;
   width: 50px;
   text-align: center;
   margin-top: 5px;
@@ -364,6 +349,7 @@ section {
 .products_one li .p_c {
   display: inline-block;
   border: 1px solid red;
+  margin-left: 10px;
   border-radius: 5px;
   width: 50px;
   text-align: center;
@@ -380,6 +366,14 @@ section {
   margin-top: 5px;
   text-align: center;
   color: red;
+}
+.products_one li *:nth-child(n+3) {
+  font-size: 12px;
+}
+.products_one li:nth-child(2)::after {
+  content: "体验师专享";
+  color: #C49A71;
+  background-color: #FAF6CB;
 }
 .products_one li:nth-child(2) .P_b {
   display: inline-block;
@@ -466,3 +460,4 @@ section {
   font-size: 12px;
   color: #a4a3a1;
 }
+/*# sourceMappingURL=./use.css.map */

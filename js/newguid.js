@@ -1,23 +1,23 @@
 
 $(function () {
     $.ajax({
-        url: 'http://localhost:3000/play/new',
+        url: 'http://192.168.0.104:3000/guid/new',
         type: 'GET',
         dataType: 'JSON',
         success: function (data) {
             var i = 0;
             var str = "";
-            data[i].map(function (nItem) {
+            data.map(function (nItem) {
                 console.log(nItem.text);
-                var Isrc = nItem.img.replace(/http:\/\/192.168.1.64/g, 'http://localhost')
+                var Isrc = nItem.img.replace(/http:\/\/192.168.1.64/g, 'http://192.168.0.104')
                 str += `<li class="find_son1_s2">
                     <img src="${Isrc}" alt="" width="220">
                     <p>${nItem.text}</p>
-                    <p>${nItem.price}</p>
+             
                     <p>
                     <img src="../img/xin.png" alt="" width="10">${nItem.like}
                     <img src="../img/reply.png" alt="" width="10">${nItem.words}
-                    </p>
+                    </p><div><div></div></div>
                 </li>`
             })
             $('.find_son1_s1').html(str)

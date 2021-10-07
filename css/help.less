@@ -11,7 +11,9 @@ ul,li,dl,dt,dd {
 }
 
 /* 头部 */
+
 .father {
+    box-shadow: 1px 0px 3px #999 inset;
     width: 100%;
     height: 74px;
     background-color: #fff;
@@ -45,7 +47,7 @@ ul,li,dl,dt,dd {
 }
 .son2 {
     float: right;
-    width: 112px;
+    width: 200px;
     height: 30px;
     margin-top: 25px;
 }
@@ -79,17 +81,32 @@ section {
     margin: 0 auto;
    overflow: hidden;
    margin-top: 50px;
+   h2{
+       color: #333;
+   }
+   b{
+       color: #444;
+   }
+   p{
+       color: #666;
+   }
+   a{
+       color: #666;
+   }
 }
 .zu {
     width: 20%;
     float: left;
     overflow: hidden;
+    background-color: #F3F3F3;
+    padding: 10px;
     .one {
         width: 100%;
         margin-top: 10px;
-        border-bottom: 2px solid;
         h2 {
-            margin-left: 20px;
+            margin:24px 20px 16px;
+            line-height: 34px;
+            border-bottom: 1px solid #A3A3A3;
         }
     }
     .two {
@@ -103,56 +120,50 @@ section {
             margin-left: 30px;
             margin-top: 5px;
         }
+        li:last-child{
+            margin-bottom: 22px;
+        }
     }
 }
 
 .you {
-    width: 70%;
+    width: 72%;
     float: left;
     overflow: hidden;
-    margin-left: 20px;
+    margin-left: 60px;
+    box-sizing: border-box;
+    padding: 30px;
+    background-color: #F3F3F3;
 }
 .z_one {
-    width: 100%;
-    margin-top: 10px;
-    border-bottom: 2px solid;
+    border-bottom: 1px solid #A3A3A3;
+    margin: 10px 20px;
     h2 {
-        margin-left: 20px;
+        line-height: 34px;
     }
 }
 .y_one {
-    width: 100%;
     margin-top: 10px;
     margin-left: 10px;
+    padding-right: 30px;
     p {
         margin-top: 10px;
         margin-left: 10px;
-        font-size: 12px;
-    }
-    p.y_two {
         font-size: 16px;
     }
-
+    p.y_two {
+        line-height: 80px;
+        font-size: 16px;
+    }
+    p.last{
+        margin-bottom: 20px;
+    }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.fter {
+footer.fter {
+    margin-top: 50px;
     width: 100%;
     height: 360px;
-    margin-top: 20px;
     background-color: #505050;
 }
 .fter_f2 {

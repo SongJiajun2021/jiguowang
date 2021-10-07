@@ -8,10 +8,9 @@
   text-align: center;
 }
 .nav .nav_son h1 {
+  margin: 0;
   font-weight: 400;
-}
-.nav .nav_son p {
-  margin-top: 88px;
+  line-height: 120px;
 }
 .nav .nav_son p a {
   display: inline-block;
@@ -80,3 +79,7 @@
 .main .life_mar {
   margin-bottom: 35px;
 }
+footer.fter {
+  margin-top: 0;
+}
+/*# sourceMappingURL=./category.css.map */

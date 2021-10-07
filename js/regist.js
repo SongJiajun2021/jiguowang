@@ -1,3 +1,4 @@
+
 $(function () {
     var first = document.getElementsByTagName('input');
     var span = document.querySelectorAll('.dd')
@@ -48,6 +49,7 @@ $(function () {
        
     // }
     document.getElementById('qwe').onclick = function fu() {
+        console.log("验证码");
         var a = 60;
         var time = function dao() {
             a--;

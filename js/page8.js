@@ -1,16 +1,16 @@
 $(function(){
     $.ajax({
-        url:'http://localhost:3000/useing/public',
+        url:'http://192.168.0.104:3000/useing/public',
         type:'GET',
         dataType:'JSON',
         success:function(hkl){
             console.log(hkl);
- 
+            
             $.each(hkl,function(i,f){
                 
                 var thk =f.img;
                 var hti =f.text;
-                var sht=thk.replace('192.168.1.13','localhost');
+                var sht=thk.replace('192.168.1.13','192.168.0.104');
                 var vbm= $('<li></li>')
                 var ning=$('<img>').attr('src',sht)
                 var bp= $('<p clsaa="as-ul-p"></p>').text(hti)
