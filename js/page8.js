@@ -5,7 +5,7 @@ $(function(){
         dataType:'JSON',
         success:function(hkl){
             console.log(hkl);
- 
+            
             $.each(hkl,function(i,f){
                 
                 var thk =f.img;

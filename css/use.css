@@ -1,6 +1,3 @@
-header.father {
-  height: auto;
-}
 .imge {
   width: 100%;
   height: 300px;
@@ -40,8 +37,9 @@ header.father {
   margin-top: 20px;
 }
 .imge .anim ul li {
-  background-color: #fff;
-  opacity: 0.7;
+  background-color: #ffffff50;
+  color: #fff;
+  line-height: 30px;
   float: left;
   width: 60px;
   margin-right: 10px;
@@ -151,7 +149,7 @@ section {
   margin-top: 2px;
 }
 .zu_two {
-  width: 100%;
+  width: 93%;
   margin-left: 20px;
 }
 .zu_two p.zu_a {
@@ -169,7 +167,7 @@ section {
   width: 568px;
 }
 .zu_two p.zu_lan {
-  color: #2566CD;
+  color: #007ED9;
   font-size: 16px;
   line-height: 80px;
 }
@@ -180,6 +178,9 @@ section {
   font-size: 12px;
   margin-left: 20px;
   margin-top: 10px;
+}
+.zu_threr p.blue {
+  color: #008795;
 }
 .zu_four {
   width: 100%;
@@ -225,19 +226,30 @@ section {
 .y_two p {
   font-size: 20px;
   color: red;
-  margin-left: 20px;
-  margin-top: 10px;
+}
+.y_two p:first-of-type {
+  margin: 30px 20px;
+  font-size: 30px;
 }
 .y_two #mai {
-  width: 50%;
-  margin: 0 auto;
-  margin-right: 188px;
-  margin-top: 10px;
+  float: none;
+  display: block;
+  width: 270px;
+  margin: 30px 20px 0;
   background-color: red;
+  height: 48px;
+  line-height: 24px;
+}
+.y_two #mai a {
+  color: #fff;
+  font-size: 20px;
 }
 .y_two p.y_c {
-  margin-left: 90px;
+  margin: 15px 20px;
+  width: 270px;
+  text-align: center;
   font-size: 12px;
+  color: #666;
 }
 .y_there {
   width: 100%;
@@ -280,7 +292,7 @@ section {
 }
 .shiyong p.duo {
   float: right;
-  margin-right: 30px;
+  margin-right: 70px;
   font-size: 14px;
   color: red;
 }
@@ -290,25 +302,46 @@ section {
 }
 .products_one li {
   list-style: none;
-  width: 24%;
+  width: 220px;
   float: left;
   overflow: hidden;
-  border: 1px solid;
+  border: 1px solid #eee;
   border-radius: 10px;
-  margin-right: 5px;
+  padding-bottom: 15px;
+  position: relative;
+}
+.products_one li:not(:last-child) {
+  margin-right: 40px;
+}
+.products_one li::after {
+  content: "首发";
+  padding: 0 8px;
+  line-height: 20px;
+  font-size: 12px;
+  background-color: #F93E1C;
+  border-radius: 0 10px;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  color: #fff;
 }
 .products_one li img {
   width: 259px;
 }
+.products_one li p {
+  margin-left: 5px;
+  margin-right: 5px;
+}
 .products_one li .p_a {
   margin-top: 5px;
   text-align: center;
+  font-weight: bold;
 }
 .products_one li .P_b {
   display: inline-block;
   border: 1px solid red;
   border-radius: 5px;
-  margin-left: 75px;
+  margin-left: 50px;
   width: 50px;
   text-align: center;
   margin-top: 5px;
@@ -316,6 +349,7 @@ section {
 .products_one li .p_c {
   display: inline-block;
   border: 1px solid red;
+  margin-left: 10px;
   border-radius: 5px;
   width: 50px;
   text-align: center;
@@ -332,6 +366,14 @@ section {
   margin-top: 5px;
   text-align: center;
   color: red;
+}
+.products_one li *:nth-child(n+3) {
+  font-size: 12px;
+}
+.products_one li:nth-child(2)::after {
+  content: "体验师专享";
+  color: #C49A71;
+  background-color: #FAF6CB;
 }
 .products_one li:nth-child(2) .P_b {
   display: inline-block;

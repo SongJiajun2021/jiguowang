@@ -8,10 +8,9 @@
   text-align: center;
 }
 .nav .nav_son h1 {
+  margin: 0;
   font-weight: 400;
-}
-.nav .nav_son p {
-  margin-top: 88px;
+  line-height: 120px;
 }
 .nav .nav_son p a {
   display: inline-block;
@@ -36,34 +35,61 @@
 .find .find_son1_s1 {
   overflow: hidden;
 }
-.find .find_son1_s1 .find_son1_s2 {
+.find .find_son1_s1 > .find_son1_s2 {
+  position: relative;
+  background-color: #fff;
+  z-index: 5;
+  transform-style: preserve-3d;
   float: left;
   width: 220px;
   height: 230px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px;
   margin-right: 48px;
   margin-bottom: 30px;
 }
-.find .find_son1_s1 .find_son1_s2 p:nth-of-type(1) {
+.find .find_son1_s1 > .find_son1_s2:nth-child(4n) {
+  margin-right: 0;
+}
+.find .find_son1_s1 > .find_son1_s2 p:nth-of-type(1) {
   font-size: 14px;
-  margin-left: 5px;
+  padding: 6px 5px;
+  line-height: 22px;
+  height: 48px;
 }
-.find .find_son1_s1 .find_son1_s2 p:nth-of-type(2) {
-  display: inline-block;
-  color: #f65340;
-  margin-top: 40px;
-  margin-left: 5px;
-}
-.find .find_son1_s1 .find_son1_s2 p:nth-of-type(3) {
-  display: inline-block;
+.find .find_son1_s1 > .find_son1_s2 p:last-of-type {
+  float: right;
   font-size: 12px;
-  margin-top: 40px;
+  margin-top: 12px;
   color: #b7b7b7;
-  margin-left: 110px;
+  margin-right: 10px;
 }
-.find .find_son1_s1 .find_son1_s2 p img {
-  vertical-align: middle;
+.find .find_son1_s1 > .find_son1_s2 p img {
+  vertical-align: top;
+  margin: 2px 2px 2px 6px;
+}
+.find .find_son1_s1 > .find_son1_s2 div {
+  display: block;
+  border-radius: 8px;
+  border: none;
+  height: 16px;
+  width: 204px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  transform: translateZ(-100px);
+  transform-style: preserve-3d;
+}
+.find .find_son1_s1 > .find_son1_s2 div > div {
+  transform: translateZ(-200px);
+  z-index: 2;
+  width: 188px;
+  bottom: -6px;
+  background-color: #fff;
 }
 .load {
   position: relative;
@@ -90,3 +116,7 @@
 .load_son2:hover {
   cursor: pointer;
 }
+footer.fter {
+  margin-top: 0;
+}
+/*# sourceMappingURL=./hotguid.css.map */

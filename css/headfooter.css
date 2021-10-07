@@ -59,6 +59,12 @@ dd {
 .son2 > a img {
   margin-top: 5px;
 }
+header.father {
+  height: auto;
+}
+header.father .son > ul > li > a.active {
+  color: #F74927;
+}
 button {
   float: right;
   margin-right: 20px;
