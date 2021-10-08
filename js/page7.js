@@ -8,7 +8,19 @@ $(function () {
 			$(this).removeClass("activ")
 			$(this).html($(this).html().replace(/(\d\d)/,15))
 		}
+
 	})
+	$(".fx-div").click(function (){
+			$(".sharedetail").toggle();
+		})
+	// $(".fx-div").hover(function (){
+	// 	$(".sharedetail").show();
+	// },function (){
+	// 	$("sharedetail").on("mousemove mouseover",function (){
+	// 		return;
+	// 	})
+	// 	$(".sharedetail").hide();
+	// })
   //右侧随页面滚动效果
 	var $right=$mainRight
 	window.onscroll=function (){

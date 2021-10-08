@@ -3,6 +3,7 @@ $(function () {
 	var flag=/\.\./.test(src)
 	var str=flag?'..':'.'
 	$(".loginbtn").click(function (e) {
+		console.log("点击登录");
 		if (!$('iframe').length) {
 			console.log("sogn");
 			$(document.body).append('<iframe src="'+str+'/login.html" frameborder="1"></iframe>')
