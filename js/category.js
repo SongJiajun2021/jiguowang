@@ -1,6 +1,6 @@
 $(function  (){
 	$.ajax({
-		url:'http://192.168.0.104:3000/play/category',
+		url:'http://192.168.43.65:3000/play/category',
 		type:'GET',
 		dataType:'JSON',
 		success: function(data){
@@ -11,7 +11,7 @@ $(function  (){
 
 						// var str=data.img;
 						i++;
-						// var iSrc=str.replace(/192.168.1.13/g,'192.168.0.104')
+						// var iSrc=str.replace(/192.168.1.13/g,'192.168.43.65')
 						Sdf+=`<div class="z_one">
 								<img src="${iSrc}" alt="">
 								<section>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
     <meta charset="UTF-8">
@@ -11,9 +11,19 @@
     <script src="./js/jquery.min.js"></script>
 
     <script src="./js/regist.js"></script>
+    <style>
+        iframe{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 50;
+        }
+    </style>
 </head>
-
 <body>
+
     <header class="father">
         <header class="son">
             <img src="./img/logonew.png" alt="" width="130">
@@ -39,21 +49,23 @@
     </header>
 
     <section>
-        <div class="reg kk">
-            <p></p>
-            <span>注册极果</span>
-            <div class="center">
-                <input type="text" placeholder="请输入登录手机号">
-                <input type="text" class="q q_2" placeholder="请输入图片校验码"> <span
-                    class="re_first  dd"></span>
-                <input type="text" class="q q_3" placeholder="请输入4位数字验证码"><button class="re_two dd"
-                    id="qwe">获取验证码</button>
-                <input type="text" class="q" placeholder="请输入用户名">
-                <input type="text" class="q" placeholder="请输入新密码">
-                <input type="text" class="q" placeholder="确定新密码">
-                <input type="button" class="q q_b" value="立即注册">
+        <form>
+            <div class="reg kk">
+                <p></p>
+                <span>注册极果</span>
+                <div class="center">
+                    <input name="phone" type="text" placeholder="请输入登录手机号" pattern="^1[3|4|5|7|8][0-9]{9}$" required autofocus>
+                    <input name="code" type="text" class="q q_2" placeholder="请输入图片校验码" pattern="^r2b7$" required> <span class="re_first  dd"></span>
+                    <input type="text" class="q q_3" placeholder="请输入4位数字验证码" pattern="^\d{4}$" required>
+                    <button class="re_two dd" type="button" id="qwe">获取验证码</button>
+                    <input name="username" type="text" class="q" placeholder="请输入用户名" pattern="^[^ ]{4,10}" required>
+                    <input name="password" type="password" class="q" placeholder="请输入新密码" autocomplete="off" pattern="^\w{6,12}$" required>
+                    <input type="password" class="q" placeholder="确定新密码" autocomplete="off" pattern="^\w{6,12}$" required>
+                    <input type="submit" class="q q_b" value="立即注册" >
+                </div>
             </div>
-        </div>
+        </form>
+        <!-- <iframe name="formResponse" frameborder="0" id="formResponse" width="200" height="20"></iframe> -->
     </section>
 
 
@@ -113,6 +125,7 @@
             <p>&copy;2016 极果版权所有</p>
         </footer>
     </footer>
+ 
 </body>
 
 </html>
