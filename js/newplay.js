@@ -1,6 +1,6 @@
 $(function () {
     $.ajax({
-        url: 'http://192.168.0.104:3000/play/new',
+        url: 'http://192.168.1.33:3000/play/new',
         type: 'GET',
         dataType: 'JSON',
         success: function (data) {
@@ -8,7 +8,7 @@ $(function () {
             var str = "";
             data[i].map(function (nItem) {
                 console.log(nItem.text);
-                var Isrc = nItem.img.replace(/http:\/\/192.168.1.64/g, 'http://192.168.0.104')
+                var Isrc = nItem.img.replace(/http:\/\/192.168.1.64/g, 'http://192.168.1.33')
                 str += `<li class="find_son1_s2">
                     <img src="${Isrc}" alt="" width="220">
                     <p>${nItem.text}</p>

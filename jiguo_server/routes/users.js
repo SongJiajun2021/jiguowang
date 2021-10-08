@@ -7,6 +7,8 @@ let users = {}; //保存用户信息
 
 // 登录
 router.post('/login', function(req, res) {
+    console.log(users);
+    
     var userinfo = req.body;
     let { username, password } = userinfo;
     console.log(username, password);
